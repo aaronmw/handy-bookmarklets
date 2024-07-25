@@ -7,19 +7,19 @@ const fields = {
   password: 'cofi-demo-2023',
   password_again: 'cofi-demo-2023',
   accepts_terms: true,
-};
+}
 
 Object.entries(fields).forEach(([fieldName, value]) => {
-  const input = document.querySelector(`[name=${fieldName}]`);
+  const input = document.querySelector(`[name=${fieldName}]`)
 
   if (input) {
     switch (input.type) {
       case 'checkbox':
-        input.checked = value;
-        break;
+        input.checked = value
+        break
       default:
-        input.value = value;
-        break;
+        input.value = value
+        break
     }
   }
-});
+})
